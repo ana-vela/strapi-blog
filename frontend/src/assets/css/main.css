@@ -11,6 +11,7 @@ h1 {
   font-family: Staatliches !important;
   font-size: 80px !important;
   color: #dde2f1 !important;
+  text-shadow: 2px 1px #000;
 }
 
 #category {
