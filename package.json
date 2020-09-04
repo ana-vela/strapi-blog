@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "gatsby-plugin-manifest": "^2.4.27",
+    "gatsby-plugin-postcss": "^2.3.11",
+    "yarn-update": "^0.1.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^1.7.6"
+  }
+}
