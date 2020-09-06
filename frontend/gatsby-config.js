@@ -44,5 +44,11 @@ module.exports = {
       },
     },
     "gatsby-plugin-offline",
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require(`tailwindcss`)],
+      },
+    },
   ],
 }
