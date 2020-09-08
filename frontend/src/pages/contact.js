@@ -16,11 +16,7 @@ const Contact = () => {
         <h1>Contact Me</h1>
 
         <img className="contactPhoto" src={ContactPhoto} alt="contact me" />
-        <form
-          className="contactForm"
-          action={`${process.env.GATSBY_GETFORM_API}`}
-          method="POST"
-        >
+        <form>
           <label htmlFor="email">Email</label>
           <br />
           <input type="email" name="email" required />
