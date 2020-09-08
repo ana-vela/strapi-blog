@@ -47,13 +47,29 @@ img:hover {
   transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1) !important;
 }
 
+.contactPage {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 60px;
+}
+.contactPhoto {
+  max-width: 50%;
+}
 .contactForm {
-  min-height: 700px;
-  padding-bottom: 700px;
-  margin-left: 100px;
+  min-height: 500px;
+  padding-left: 40px;
+  margin-top: 100px;
 }
 
 .contactForm .button .input {
   color: black;
   outline-color: whitesmoke;
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded
+}
+
+.grecaptcha-badge {
+  display: none;
 }
