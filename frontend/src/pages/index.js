@@ -22,6 +22,7 @@ const IndexPage = () => (
                 strapiId
                 slug
                 title
+                publishedAt(formatString: "MMMM Do, YYYY")
                 category {
                   name
                 }
