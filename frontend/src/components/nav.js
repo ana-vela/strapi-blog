@@ -20,7 +20,7 @@ const Nav = () => (
         }
       }
     `}
-    render={data =>
+    render={data => (
       <div>
         <div>
           <nav className="uk-navbar-container" data-uk-navbar>
@@ -33,10 +33,15 @@ const Nav = () => (
             </div>
 
             <div className="uk-navbar-right">
-            <button className="uk-button uk-button-default uk-margin-right" type="button">Categories</button>
-            <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
+              <button
+                className="uk-button uk-button-default uk-margin-right"
+                type="button"
+              >
+                Categories
+              </button>
+              <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
                 <ul className="uk-nav uk-dropdown-nav">
-                { data.allStrapiCategory.edges.map((category, i) => {
+                  {data.allStrapiCategory.edges.map((category, i) => {
                     return (
                       <li key={`category__${category.node.slug}`}>
                         <Link to={`/category/${category.node.slug}`}>
@@ -44,17 +49,18 @@ const Nav = () => (
                         </Link>
                       </li>
                     )
-                  })
-                }
+                  })}
+                  <li>
+                    <Link to={`/contact`}>Contact</Link>
+                  </li>
                 </ul>
-            </div>
+              </div>
             </div>
           </nav>
         </div>
       </div>
-    }
+    )}
   />
-
 )
 
 export default Nav
