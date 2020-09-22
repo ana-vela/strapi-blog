@@ -38,7 +38,7 @@ const Contact = () => {
           <br />
           <div
             className="g-recaptcha"
-            data-sitekey={`${process.env.GATSBY_RECAPTCHA_API}`}
+            data-sitekey="6LekpskZAAAAAOB-jlWC-V6QkfNLw12rD3eQMwtw"
           ></div>
           <br />
           <br />
