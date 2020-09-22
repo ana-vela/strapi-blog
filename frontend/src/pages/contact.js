@@ -17,29 +17,69 @@ const Contact = () => {
 
         <img className="contactPhoto" src={ContactPhoto} alt="contact me" />
         <br />
-        <p style={{fontSize: '20px'}}>Want to get in touch with me? Fill out this form and I will reply as soon as possible. Thanks! </p>
-        <form>
+        <p style={{ fontSize: "20px" }}>
+          Want to get in touch with me? Fill out this form and I will reply as
+          soon as possible. Thanks!{" "}
+        </p>
+        <form
+          className="contactForm"
+          action={`${process.env.GATSBY_GETFORM_API}`}
+          method="POST"
+        >
           <label htmlFor="email">Email</label>
           <br />
-          <input placeholder="Email Address" style={{color: 'black', height:'40px', width:'500px', paddingLeft: '20px'}} type="email" name="email" required />
+          <input
+            placeholder="Email Address"
+            style={{
+              color: "black",
+              height: "40px",
+              width: "500px",
+              paddingLeft: "20px",
+            }}
+            type="email"
+            name="email"
+            required
+          />
           <br />
           <br />
           <label htmlFor="name">Name</label>
           <br />
-          <input placeholder="Name" style={{color: 'black', height: '40px', width: '500px', paddingLeft: '20px'}} type="text" name="name" required />
+          <input
+            placeholder="Name"
+            style={{
+              color: "black",
+              height: "40px",
+              width: "500px",
+              paddingLeft: "20px",
+            }}
+            type="text"
+            name="name"
+            required
+          />
 
           <br />
           <br />
           <label htmlFor="message">Message</label>
           <br />
-          <input  style={{color: 'black', height:"100px", width:"500px", paddingBottom: '50px', paddingLeft: '20px'}} type="text" name="message" placeholder="Type your message here" required />
+          <input
+            style={{
+              color: "black",
+              height: "100px",
+              width: "500px",
+              paddingBottom: "50px",
+              paddingLeft: "20px",
+            }}
+            type="text"
+            name="message"
+            placeholder="Type your message here"
+            required
+          />
 
           <br />
           <br />
           <div
             className="g-recaptcha"
-            data-sitekey="6LekpskZAAAAAOB-jlWC-V6QkfNLw12rD3eQMwtw"
-          ></div>
+            data-sitekey={`${process.env.GATSBY_GETFORM_API}`}></div>
           <br />
           <br />
           <button
