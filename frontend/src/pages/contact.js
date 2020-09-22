@@ -16,21 +16,23 @@ const Contact = () => {
         <h1>Contact Me</h1>
 
         <img className="contactPhoto" src={ContactPhoto} alt="contact me" />
+        <br />
+        <p style={{fontSize: '20px'}}>Want to get in touch with me? Fill out this form and I will reply as soon as possible. Thanks! </p>
         <form>
           <label htmlFor="email">Email</label>
           <br />
-          <input type="email" name="email" required />
+          <input placeholder="email address" style={{color: 'black'}} type="email" name="email" required />
           <br />
           <br />
           <label htmlFor="name">Name</label>
           <br />
-          <input type="text" name="name" required />
+          <input placeholder="Name" style={{color: 'black'}} type="text" name="name" required />
 
           <br />
           <br />
           <label htmlFor="message">Message</label>
           <br />
-          <input type="text" name="message" required />
+          <textarea  cols="30" rows="5" style={{color: 'black'}} type="text" name="message" placeholder="type your message here" required />
 
           <br />
           <br />
