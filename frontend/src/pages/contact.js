@@ -21,18 +21,18 @@ const Contact = () => {
         <form>
           <label htmlFor="email">Email</label>
           <br />
-          <input placeholder="email address" style={{color: 'black'}} type="email" name="email" required />
+          <input placeholder="Email Address" style={{color: 'black', height:'40px', width:'500px', paddingLeft: '20px'}} type="email" name="email" required />
           <br />
           <br />
           <label htmlFor="name">Name</label>
           <br />
-          <input placeholder="Name" style={{color: 'black'}} type="text" name="name" required />
+          <input placeholder="Name" style={{color: 'black', height: '40px', width: '500px', paddingLeft: '20px'}} type="text" name="name" required />
 
           <br />
           <br />
           <label htmlFor="message">Message</label>
           <br />
-          <textarea  cols="30" rows="5" style={{color: 'black'}} type="text" name="message" placeholder="type your message here" required />
+          <input  style={{color: 'black', height:"100px", width:"500px", paddingBottom: '50px', paddingLeft: '20px'}} type="text" name="message" placeholder="Type your message here" required />
 
           <br />
           <br />
