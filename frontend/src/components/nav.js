@@ -51,6 +51,8 @@ const Nav = () => (
                     )
                   })}
                   <li>
+                    <Link to={`/article/about-me`}>About Me</Link>
+
                     <Link to={`/contact`}>Contact</Link>
                   </li>
                 </ul>
