@@ -16,7 +16,7 @@ const IndexPage = () => (
               HeroText
             }
           }
-          allStrapiArticle(filter: {status: {eq: "published"}}) {
+          allStrapiArticle(filter: { status: { eq: "published" } }) {
             edges {
               node {
                 strapiId
@@ -28,18 +28,18 @@ const IndexPage = () => (
                 }
                 image {
                   childImageSharp {
-                      fixed(width: 800, height: 500) {
-                      	src
-                      }
+                    fixed(width: 800, height: 500) {
+                      src
+                    }
                   }
                 }
                 user {
                   username
                   image {
                     childImageSharp {
-                        fixed(width: 30, height: 30) {
-                        	src
-                        }
+                      fixed(width: 30, height: 30) {
+                        src
+                      }
                     }
                   }
                 }
@@ -52,6 +52,7 @@ const IndexPage = () => (
         <div className="uk-section">
           <div className="uk-container uk-container-large">
             <h1>{data.strapiHomepage.Hero.HeroText}</h1>
+            <h2 className="tagline">Hi! I'm Ana, a writer and front-end developer focusing on JavaScript, React, and Gatsby. You can also find me on <a href="https://twitter.com/anaveecodes">Twitter</a>, <a href="https://instagram.com/anaveecodes">Instagram</a>, and <a href="https://github.com/ana-vela">GitHub</a>.  </h2>
             <ArticlesComponent articles={data.allStrapiArticle.edges} />
           </div>
         </div>
