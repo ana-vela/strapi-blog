@@ -58,18 +58,21 @@ const IndexPage = () => (
             <h1>{data.strapiHomepage.Hero.HeroText}</h1>
 
             <h2 className="tagline">Writer & Front-End Developer</h2>
+            <div>
+              <a
+                className="socialIcons"
+                href="https://instagram.com/anaveecodes"
+              >
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+              <a className="socialIcons" href="https://twitter.com/anaveecodes">
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
 
-            <a className="socialIcons" href="https://instagram.com/anaveecodes">
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-            <a className="socialIcons" href="https://twitter.com/anaveecodes">
-              <FontAwesomeIcon icon={faTwitter} />
-            </a>
-
-            <a className="socialIcons" href="https://github.com/ana-vela">
-              <FontAwesomeIcon icon={faGithubAlt} />
-            </a>
-
+              <a className="socialIcons" href="https://github.com/ana-vela">
+                <FontAwesomeIcon icon={faGithubAlt} />
+              </a>
+            </div>
             <ArticlesComponent articles={data.allStrapiArticle.edges} />
           </div>
         </div>
