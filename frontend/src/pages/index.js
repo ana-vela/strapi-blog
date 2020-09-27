@@ -1,10 +1,14 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-
 import Layout from "../components/layout"
 import ArticlesComponent from "../components/articles"
-
 import "../assets/css/main.css"
+import {
+  faTwitter,
+  faGithubAlt,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const IndexPage = () => (
   <Layout>
@@ -52,7 +56,20 @@ const IndexPage = () => (
         <div className="uk-section">
           <div className="uk-container uk-container-large">
             <h1>{data.strapiHomepage.Hero.HeroText}</h1>
-            <h2 className="tagline">Hi! I'm Ana, a writer and front-end developer focusing on JavaScript, React, and Gatsby. You can also find me on <a href="https://twitter.com/anaveecodes">Twitter</a>, <a href="https://instagram.com/anaveecodes">Instagram</a>, and <a href="https://github.com/ana-vela">GitHub</a>.  </h2>
+
+            <h2 className="tagline">Writer & Front-End Developer</h2>
+
+            <a className="socialIcons" href="https://instagram.com/anaveecodes">
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a className="socialIcons" href="https://twitter.com/anaveecodes">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+
+            <a className="socialIcons" href="https://github.com/ana-vela">
+              <FontAwesomeIcon icon={faGithubAlt} />
+            </a>
+
             <ArticlesComponent articles={data.allStrapiArticle.edges} />
           </div>
         </div>
