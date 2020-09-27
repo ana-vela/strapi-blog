@@ -3,7 +3,8 @@ import { StaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import ArticlesComponent from "../components/articles"
 import "../assets/css/main.css"
-import fontawesome from "@fortawesome/fontawesome"
+//import fontawesome from "@fortawesome/react-fontawesome"
+// import { config } from '@fortawesome/free-brands-svg-icons'
 
 import {
   faTwitter,
@@ -12,9 +13,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-fontawesome.config = {
-  autoAddCss: false,
-}
+
+// config.autoAddCss = false // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 
 const IndexPage = () => (
   <Layout>
@@ -63,7 +63,7 @@ const IndexPage = () => (
           <div className="uk-container uk-container-large">
             <h1>{data.strapiHomepage.Hero.HeroText}</h1>
 
-            <h2 className="tagline">Writer & Front-End Developer</h2>
+            <h2 className="tagline">Front-End Developer</h2>
             <div className="social">
               <a
                 className="socialIcons"
