@@ -3,12 +3,18 @@ import { StaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import ArticlesComponent from "../components/articles"
 import "../assets/css/main.css"
+import fontawesome from "@fortawesome/fontawesome"
+
 import {
   faTwitter,
   faGithubAlt,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+fontawesome.config = {
+  autoAddCss: false,
+}
 
 const IndexPage = () => (
   <Layout>
@@ -63,6 +69,7 @@ const IndexPage = () => (
                 className="socialIcons"
                 href="https://instagram.com/anaveecodes"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
@@ -70,6 +77,7 @@ const IndexPage = () => (
                 className="socialIcons"
                 href="https://twitter.com/anaveecodes"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
@@ -78,6 +86,7 @@ const IndexPage = () => (
                 className="socialIcons"
                 href="https://github.com/ana-vela"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faGithubAlt} />
               </a>
