@@ -1,12 +1,15 @@
+const { faHtml5 } = require("@fortawesome/free-brands-svg-icons")
+const { HTML5_FMT } = require("moment")
+
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
 module.exports = {
   siteMetadata: {
-    title: "Strapi Gatsby Blog Starter",
+    title: "Ana Vela | Front-End Developer",
     titleTemplate: "%s · Unleash content",
-    description: "Strapi Gatsby Blog Starter",
+    description: "Ana Vela | Front-End Developer",
     url: process.env.API_URL || "http://localhost:1337", // No trailing slash allowed!
     image: "/uploads/default-image.jpeg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@you",
