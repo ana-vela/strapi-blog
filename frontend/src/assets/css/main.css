@@ -52,17 +52,16 @@ img:hover {
 }
 
 .contactPage {
-  margin-left: 40px;
+  margin-left: 60px;
   margin-right: 40px;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .contactPhoto {
   max-width: 50%;
 }
 .contactForm {
-  min-height: 500px;
-  padding-left: 40px;
-  margin-top: 100px;
+  min-height: 600px;
+  margin-top: 80px;
 }
 
 .contactForm .button .input {

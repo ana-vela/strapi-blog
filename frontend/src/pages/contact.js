@@ -12,19 +12,21 @@ const Contact = () => {
       <Helmet>
         <script src="https://www.google.com/recaptcha/api.js"></script>
       </Helmet>
-      <div className="contactPage">
+      <div className="contactPage" style={{justifyContent: 'left', paddingBottom: '40px'}}>
         <h1>Contact Me</h1>
 
         <img className="contactPhoto" src={ContactPhoto} alt="contact me" />
         <br />
         <p style={{ fontSize: "20px" }}>
-          Want to get in touch with me? Fill out this form and I will reply as
+          Want to get in touch? Fill out this form and I will reply as
           soon as possible. Thanks!{" "}
         </p>
-        <form
+        <form 
+        
           className="contactForm"
           action={`${process.env.GATSBY_GETFORM_API}`}
           method="POST"
+          
         >
           <label htmlFor="email">Email</label>
           <br />
@@ -33,7 +35,7 @@ const Contact = () => {
             style={{
               color: "black",
               height: "40px",
-              width: "500px",
+              width: "330px",
               paddingLeft: "20px",
             }}
             type="email"
@@ -49,7 +51,7 @@ const Contact = () => {
             style={{
               color: "black",
               height: "40px",
-              width: "500px",
+              width: "330px",
               paddingLeft: "20px",
             }}
             type="text"
@@ -64,10 +66,11 @@ const Contact = () => {
           <input
             style={{
               color: "black",
-              height: "100px",
-              width: "500px",
-              paddingBottom: "50px",
-              paddingLeft: "20px",
+              height: "200px",
+              width: "330px",
+              paddingBottom: "100px",
+              // paddingTop: "20px",
+              paddingLeft: "20px"
             }}
             type="text"
             name="message"
