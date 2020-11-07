@@ -10,16 +10,16 @@ import {
   faTwitter,
   faGithubAlt,
   faInstagram,
+  faDev,
 } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 // The following import prevents a Font Awesome icon server-side rendering bug,
 // where the icons flash from a very large icon down to a properly sized one:
-import '@fortawesome/fontawesome-svg-core/styles.css';
+import "@fortawesome/fontawesome-svg-core/styles.css"
 // Prevent fontawesome from adding its CSS since we did it manually above:
-import { config } from '@fortawesome/fontawesome-svg-core';
-config.autoAddCss = false; /* eslint-disable import/first */
-
+import { config } from "@fortawesome/fontawesome-svg-core"
+config.autoAddCss = false /* eslint-disable import/first */
 
 // config.autoAddCss = false // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 
@@ -96,6 +96,14 @@ const IndexPage = () => (
                 rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faGithubAlt} />
+              </a>
+              <a
+                className="socialIcons"
+                href="https://dev.to/anaveecodes"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faDev} />
               </a>
             </div>
             <ArticlesComponent articles={data.allStrapiArticle.edges} />
