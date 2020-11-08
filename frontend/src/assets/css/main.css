@@ -100,3 +100,7 @@ img:hover {
  .uk-article a:link {
   color: #cdb9d6 !important;
 }
+
+.uk-article a:visited {
+  color: #cdb9d6 !important;
+}
