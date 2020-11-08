@@ -73,7 +73,7 @@ const Article = ({ data }) => {
         </div>
 
         <div className="uk-section">
-          <div className="uk-container uk-container-small">
+          <div className="uk-container uk-container-small uk-article">
             <MDXProvider>
               <MDXRenderer>
                 {article.childStrapiArticleContent.childMdx.body}
