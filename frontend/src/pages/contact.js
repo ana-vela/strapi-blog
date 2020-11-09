@@ -63,7 +63,7 @@ const Contact = () => {
           <br />
           <label htmlFor="message">Message</label>
           <br />
-          <textarea id="input-message"
+          <input id="input-message"
             style={{
               color: "black",
               height: "200px",
@@ -71,7 +71,7 @@ const Contact = () => {
             }}
             type="text"
             name="message"
-            placeholder="Type your message here"
+            // placeholder="Type your message here"
             required
           />
 
