@@ -104,3 +104,7 @@ img:hover {
 .uk-article a:visited {
   color: #cdb9d6 !important;
 }
+
+#input-message {
+  padding: 20px 20px 0 20px;
+}
