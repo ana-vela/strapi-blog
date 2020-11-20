@@ -48,7 +48,7 @@ const Category = ({ data }) => {
   return (
     <Layout>
     <Seo
-          title={category + " - Strapi Gatsby Blog Starter"}
+          title={category + " Ana Vela | Front-End Developer"}
           description={category + " on my blog"}
         />
       <div className="uk-section">
