@@ -32,6 +32,19 @@ const Nav = () => (
                   </Link>
                 </li>
               </ul>
+              <div className="nav-menu">
+                <ul>
+                  <li>
+                    <Link to={`/contact`}>Contact </Link>
+                  </li>
+                  <li>
+                    <Link to={`/article/about-me`}>About Me </Link>
+                  </li>
+                  <li>
+                    <Link to={`/category/posts`}>Blog Posts </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div className="uk-navbar-right">
@@ -39,7 +52,7 @@ const Nav = () => (
                 className="uk-button uk-button-default uk-margin-right"
                 type="button"
               >
-                Menu
+                &#9776;
               </button>
               <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
                 <ul className="uk-nav uk-dropdown-nav">

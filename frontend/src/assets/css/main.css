@@ -94,7 +94,7 @@ img:hover {
 }
 
 #navHome {
-  color: #565252 !important;
+  color: #565252;
 }
 
  .uk-article a:link {
@@ -108,3 +108,40 @@ img:hover {
 #input-message {
   padding: 20px 20px 140px 20px;
 }
+
+.uk-navbar-right button {
+  display: none;
+}
+
+.nav-menu {
+  position: absolute;
+  right: 0;
+  
+}
+.nav-menu li {
+  display: inline;
+  padding-right: 20px;
+  float: right;
+}
+
+.nav-menu li a {
+  color: #565252;
+  text-transform: uppercase;
+  font-size: .875rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+
+/*
+ * media queries
+ */
+ 
+ @media screen and (max-width: 700px) {
+
+  .uk-navbar-right button {
+    display: inline-block;
+  }
+  .nav-menu {
+    display: none;
+  }
+ }
