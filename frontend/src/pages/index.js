@@ -11,6 +11,7 @@ import {
   faGithubAlt,
   faInstagram,
   faDev,
+  faLinkedin
 } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -96,6 +97,14 @@ const IndexPage = () => (
                 rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faGithubAlt} />
+              </a>
+              <a
+                className="socialIcons"
+                href="https://linkedin.com/in/ana-vela"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faLinkedin} />
               </a>
               <a
                 className="socialIcons"
