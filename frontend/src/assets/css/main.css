@@ -1,6 +1,7 @@
 body {
   background-color: #4f586b;
   color: #dde2f1;
+  min-height: 100vh;
 }
 
 a {
@@ -14,8 +15,8 @@ h1 {
   text-shadow: 2px 1px #000;
 }
 
-h2 {
-  color: white !important;
+h2.tagline {
+  color: white ;
 }
 
 #category {
@@ -131,6 +132,21 @@ img:hover {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
+.projectsPage {
+  margin: 60px;
+}
+
+.card {
+  background-color: #d3d3d3;
+  color: black;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 40px;
+  width: 350px;
+}
 
 /*
  * media queries
