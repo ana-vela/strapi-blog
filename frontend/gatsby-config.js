@@ -12,7 +12,7 @@ module.exports = {
     description: "Ana Vela | Front-End Developer",
     url: process.env.API_URL || "http://localhost:1337", // No trailing slash allowed!
     image: "/uploads/default-image.jpeg", // Path to your image you placed in the 'static' folder
-    twitterUsername: "@you",
+    twitterUsername: "@anaveecodes",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
