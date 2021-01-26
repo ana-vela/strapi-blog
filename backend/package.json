@@ -14,6 +14,7 @@
   "devDependencies": {},
   "dependencies": {
     "fs-extra": "^9.0.1",
+    "gatsby-cli": "^2.18.0",
     "gatsby-plugin-postcss": "^2.3.11",
     "knex": "<0.20.0",
     "lodash": "^4.17.19",
