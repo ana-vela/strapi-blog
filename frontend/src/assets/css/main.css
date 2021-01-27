@@ -146,7 +146,8 @@ img:hover {
   margin: 20px;
   padding: 40px;
   width: 350px;
-}
+  height: 400px;
+} 
 
 /*
  * media queries
