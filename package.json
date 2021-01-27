@@ -5,7 +5,7 @@
     "@fortawesome/react-fontawesome": "^0.1.11",
     "autoprefixer": "^10.1.0",
     "emotion": "^10.0.27",
-    "gatsby-plugin-manifest": "^2.4.27",
+    "gatsby-plugin-manifest": "^2.4.5",
     "gatsby-plugin-postcss": "^2.3.11",
     "postcss": "^8.2.2",
     "react-custom-share": "^0.4.8",
