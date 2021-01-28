@@ -7,7 +7,7 @@ import Blog from "./images/blog.jpg"
 const Projects = () => {
   return (
     <Layout>
-      <div className="projectsPage" style={{ padding: "40px" }}>
+      <div className="projectsPage">
         <h1>My Projects</h1>
         <div className="cards">
           <div className="card">

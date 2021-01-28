@@ -134,6 +134,7 @@ img:hover {
 
 .projectsPage {
   margin: 60px;
+  width: 100%;
 }
 
 .card {
@@ -160,5 +161,9 @@ img:hover {
   }
   .nav-menu {
     display: none;
+  }
+  .cards {
+    width: 100%;
+    margin-left: -60px;
   }
  }
