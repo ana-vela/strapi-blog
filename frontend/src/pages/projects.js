@@ -16,11 +16,7 @@ const projects = () => {
           </div>
           <div className="card">
             <h2>Recipe Finder</h2>
-            <img
-              alt="projects"
-              src={RecipeApp}
-              style={{ height: "320px;", width: "300px" }}
-            />
+            <img alt="projects" src={RecipeApp} />
           </div>
           <div className="card">
             <h2>Translation App</h2>
