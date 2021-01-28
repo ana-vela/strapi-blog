@@ -21,7 +21,7 @@
     "lodash": "^4.17.19",
     "node-pre-gyp": "^0.17.0",
     "pg": "^8.3.0",
-    "sqlite3": "5.0.0",
+    "sqlite3": "^5.0.0",
     "strapi": "^3.2.5",
     "strapi-admin": "^3.4.5",
     "strapi-connector-bookshelf": "3.2.5",

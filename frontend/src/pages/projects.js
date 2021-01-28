@@ -4,7 +4,7 @@ import RecipeApp from "./images/my-recipe-finder.jpg"
 import Translr from "./images/translate-app.jpg"
 import Blog from "./images/blog.jpg"
 
-const projects = () => {
+const Projects = () => {
   return (
     <Layout>
       <div className="projectsPage" style={{ padding: "40px" }}>
@@ -28,4 +28,4 @@ const projects = () => {
   )
 }
 
-export default projects
+export default Projects

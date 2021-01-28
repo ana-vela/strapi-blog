@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 
 import ContactPhoto from "./images/contact-me-photo.jpg"
 
-import { Helmet } from "react-helmet"
+import Helmet  from "react-helmet"
 
 const Contact = () => {
   return (
