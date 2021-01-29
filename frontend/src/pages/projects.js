@@ -13,14 +13,31 @@ const Projects = () => {
           <div className="card">
             <h2>Blog</h2>
             <img alt="projects" src={Blog} />
+            <h3>A React app built with Gatsby and Strapi CMS</h3>
+            <div className="cardButtons">
+              <a href="https://github.com/ana-vela/strapi-blog">Source Code</a>
+              <a href="/">Visit Site</a>
+            </div>
           </div>
           <div className="card">
             <h2>Recipe Finder</h2>
             <img alt="projects" src={RecipeApp} />
+            <h3>A React app using the Edamam recipe search API</h3>
+            <div className="cardButtons">
+              <a href="https://github.com/ana-vela/recipe-app">Source Code</a>
+              <a href="https://my-recipe-finder.netlify.app/">Visit Site</a>
+            </div>
           </div>
           <div className="card">
             <h2>Translation App</h2>
             <img alt="projects" src={Translr} />
+            <h3>A React app built with React Bootstrap, the Collins Dictionary API, and the Context API</h3>
+            <div className="cardButtons">
+              <a href="https://github.com/ana-vela/translator-app">
+                Source Code
+              </a>
+              <a href="https://translr.netlify.app/">Visit Site</a>
+            </div>
           </div>
         </div>
       </div>
