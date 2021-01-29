@@ -41,6 +41,9 @@ const Nav = () => (
                     <Link to={`/article/about-me`}>About Me </Link>
                   </li>
                   <li>
+                  <Link to={`/projects`}>Projects </Link>
+                </li>
+                  <li>
                     <Link to={`/category/posts`}>Blog Posts </Link>
                   </li>
                 </ul>
